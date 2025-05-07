@@ -17,3 +17,7 @@ collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_7k104")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true

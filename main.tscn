@@ -669,10 +669,10 @@ scale = Vector2(12.8018, 9.86719)
 texture = ExtResource("6_7mycd")
 
 [node name="Enemy" parent="." instance=ExtResource("2_0xm2m")]
-position = Vector2(662, 307)
+position = Vector2(662, 356.265)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-208, 56)
+position = Vector2(-207, 65)
 script = ExtResource("3_h2yge")
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]

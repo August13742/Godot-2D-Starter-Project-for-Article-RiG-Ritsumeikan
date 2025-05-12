@@ -579,6 +579,7 @@ script = ExtResource("1_onrkg")
 state_machine_debug = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, -46)
 shape = SubResource("CapsuleShape2D_onrkg")
 

@@ -1,10 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://d25txupl55glj"]
+[gd_scene load_steps=6 format=3 uid="uid://d25txupl55glj"]
 
-[ext_resource type="PackedScene" uid="uid://bo484frb127rp" path="res://player.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://cu5djtj36skme" path="res://enemy.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://bp0ybb3ftro3a" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bo484frb127rp" path="res://player/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cu5djtj36skme" path="res://enemy/enemy.tscn" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://d3xc545yhs4m4" path="res://camera_2d.gd" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cruearff1ip5x" path="res://Space Background.png" id="6_7mycd"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_1bvp3")
+
+[node name="SpaceBackground" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.270588)
+position = Vector2(4316, 3399)
+scale = Vector2(12.8018, 9.86719)
+texture = ExtResource("6_7mycd")
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 z_index = 1

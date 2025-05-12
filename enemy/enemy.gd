@@ -62,7 +62,8 @@ func tween_2():
 		Vector2(-20.0,-10.0),
 		Vector2(-5.0,85.0),
 		0.5).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_EXPO)
-		
+	
+	tween2.tween_property(self, "scale",Vector2(1,1),0.5)
 	
 
 	tween2.tween_callback(_tween_callback)
@@ -82,7 +83,7 @@ func _process(_delta: float) -> void:
 	
 
 func _on_timer_timeout():
-	self.scale = Vector2.ONE
+	
 	if can_tween:
 		jump_tween()
 		collision_shape_2d.set_deferred("disabled",true)

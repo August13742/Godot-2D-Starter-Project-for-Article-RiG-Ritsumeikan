@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq5kv22oo6hic"
-path="res://.godot/imported/front.png-81cd0f6ba553b19919e32dac53483d8a.ctex"
+uid="uid://bmpgnurvmkpcp"
+path="res://.godot/imported/Player Running Aiming 48x48.png-4e5ed2b2098e1a09edc7572909860eec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://front.png"
-dest_files=["res://.godot/imported/front.png-81cd0f6ba553b19919e32dac53483d8a.ctex"]
+source_file="res://StateMachine/Player Running Aiming 48x48.png"
+dest_files=["res://.godot/imported/Player Running Aiming 48x48.png-4e5ed2b2098e1a09edc7572909860eec.ctex"]
 
 [params]
 

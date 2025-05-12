@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=3 uid="uid://baykd0m7yn3el"]
+
+[ext_resource type="Script" uid="uid://bx8xjir1bt2hj" path="res://StateMachine/state_machine.gd" id="1_jm0mb"]
+[ext_resource type="Script" uid="uid://4pvixwhv6aj8" path="res://StateMachine/idle.gd" id="2_71vpo"]
+[ext_resource type="Script" uid="uid://cj1qldbnlls3a" path="res://StateMachine/walk.gd" id="3_krt0f"]
+[ext_resource type="Script" uid="uid://bc6tghevst171" path="res://StateMachine/sprint.gd" id="4_klees"]
+[ext_resource type="Script" uid="uid://dqkgxupo8jwol" path="res://StateMachine/airbourne.gd" id="5_i11he"]
+[ext_resource type="Script" uid="uid://b6xawjl06qvoy" path="res://StateMachine/hurt.gd" id="6_4iomq"]
+[ext_resource type="Script" uid="uid://dteywnkeeimew" path="res://StateMachine/dash.gd" id="7_klees"]
+
+[node name="StateMachine" type="Node"]
+script = ExtResource("1_jm0mb")
+
+[node name="Idle" type="Node" parent="."]
+script = ExtResource("2_71vpo")
+
+[node name="Walk" type="Node" parent="."]
+script = ExtResource("3_krt0f")
+
+[node name="Sprint" type="Node" parent="."]
+script = ExtResource("4_klees")
+
+[node name="Airbourne" type="Node" parent="."]
+script = ExtResource("5_i11he")
+
+[node name="Hurt" type="Node" parent="."]
+script = ExtResource("6_4iomq")
+
+[node name="Dash" type="Node" parent="."]
+script = ExtResource("7_klees")

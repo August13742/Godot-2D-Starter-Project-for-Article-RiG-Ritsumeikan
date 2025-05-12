@@ -21,11 +21,6 @@ material = SubResource("ShaderMaterial_qi2p4")
 texture = ExtResource("3_qi2p4")
 offset = Vector2(0, -85)
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-modulate = Color(1, 0, 0, 0)
-texture = ExtResource("3_qi2p4")
-offset = Vector2(0, -85)
-
 [node name="Area2D" type="Area2D" parent="."]
 visible = false
 collision_layer = 0

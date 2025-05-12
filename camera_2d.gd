@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 	target_position = target.global_position
 	global_position = global_position.lerp(
 		target_position, (1.0-exp(-delta*damping_factor)))
+		
 	if shake_time > 0.0:
 		shake_time -= delta
 		var decay = shake_time / shake_duration

@@ -9,7 +9,7 @@ func enter():
 	animation_player.play("dash")
 	root_entity.hurtbox_collision.disabled = true
 	root_entity.can_dash = false
-	root_entity.dash_timer.start()
+	root_entity.dash_timer.start(root_entity.dash_cooldown)
 
 func update(delta:float):
 	var input_x:float = root_entity.input_x

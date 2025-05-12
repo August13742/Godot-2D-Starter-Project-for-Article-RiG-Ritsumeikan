@@ -29,6 +29,7 @@ func _ready():
 	debug_label.visible = true if state_machine_debug else false
 	dash_timer.wait_time = dash_cooldown
 	dash_timer.timeout.connect(reset_dash)
+	
 func _physics_process(delta):
 	input_x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	sprite.flip_h = true if input_x<0 else false

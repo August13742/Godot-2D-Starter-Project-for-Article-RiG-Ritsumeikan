@@ -19,8 +19,7 @@ func update(delta:float):
 	if Input.is_action_just_released("sprint"):
 		owner.change_state(StateMachine.Walk)
 		return
-	if Input.is_action_pressed("dash"):
-		owner.change_state(StateMachine.Dash)
+
 
 	var accel:float = root_entity.ground_acceleration
 	var speed:float = root_entity.sprint_speed

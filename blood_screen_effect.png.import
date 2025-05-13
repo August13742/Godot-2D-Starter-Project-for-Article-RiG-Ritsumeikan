@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du582i82p1bfi"
-path="res://.godot/imported/back.png-05235b06bb1b4f4548f167823915b923.ctex"
+uid="uid://8rdb35yr8kue"
+path="res://.godot/imported/blood_screen_effect.png-3db9a73b6943b1ab2dcd6dd9cc6e9e93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/back.png"
-dest_files=["res://.godot/imported/back.png-05235b06bb1b4f4548f167823915b923.ctex"]
+source_file="res://blood_screen_effect.png"
+dest_files=["res://.godot/imported/blood_screen_effect.png-3db9a73b6943b1ab2dcd6dd9cc6e9e93.ctex"]
 
 [params]
 

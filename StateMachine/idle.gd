@@ -22,7 +22,7 @@ func update(_delta:float):
 	if !root_entity.is_on_floor():
 		owner.change_state(StateMachine.Airbourne)
 
-	if !animation_player.is_playing(): animation_player.play("idle")
+	#if !animation_player.is_playing(): animation_player.play("idle")
 
 
 

@@ -21,10 +21,14 @@ func exit():
 
 
 func handle_input(_event: InputEvent):
-	if _event.is_action_pressed("shoot") && can_shoot() && root_entity.can_shoot:
-		print("hi")
-		root_entity.shoot()
-
+	if _event.is_action_pressed("shoot") && can_shoot():
+		root_entity.shoot_hold = true
+	if _event.is_action_released("shoot") || !can_shoot(): 
+		## normally speaking this shouldn't be here because it requires input to trigger
+		## but since you need to pass input to be able to transition into a state that disables shooting, so it kind of works
+		root_entity.shoot_hold = false
+		
+		
 	if _event.is_action_pressed("jump") && can_jump():
 		jump()
 

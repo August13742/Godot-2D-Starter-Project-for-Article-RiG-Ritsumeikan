@@ -22,7 +22,7 @@ func update(delta:float):
 		owner.change_state(StateMachine.Sprint)
 		return
 
-
+	
 	var accel:float = root_entity.ground_acceleration
 	var speed:float = root_entity.normal_speed
 
@@ -31,3 +31,5 @@ func update(delta:float):
 
 	root_entity.move_and_slide()
 	root_entity.apply_floor_snap()
+	
+	if !animation_player.is_playing(): animation_player.play("walk")

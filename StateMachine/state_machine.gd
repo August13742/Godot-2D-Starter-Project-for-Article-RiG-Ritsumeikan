@@ -29,8 +29,11 @@ func _ready():
 
 
 	change_state.call_deferred(StateMachine.Idle)
+	
+	late_init.call_deferred()
 
-
+func late_init():
+	root_entity.health_component.received_damage.connect(_on_received_damage)
 
 func change_state(state: int):
 	if current_state:
@@ -46,3 +49,6 @@ func update(delta: float):
 func handle_input(event: InputEvent):
 	if current_state:
 		current_state.handle_input(event)
+
+func _on_received_damage():
+	change_state(StateMachine.Hurt)

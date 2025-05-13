@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://wu77mlguuc7n"]
+
+[ext_resource type="Script" uid="uid://d2re74mqd6mv2" path="res://Scenes/UI/FloatingDamageText/floating_text.gd" id="1_jr0eu"]
+
+[node name="FloatingText" type="Node2D"]
+script = ExtResource("1_jr0eu")
+
+[node name="Label" type="Label" parent="."]
+self_modulate = Color(0.701961, 0.690196, 0.662745, 1)
+custom_minimum_size = Vector2(100, 32)
+offset_left = -50.0
+offset_top = -16.0
+offset_right = 50.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.247059, 0.14902, 0.192157, 1)
+theme_override_constants/outline_size = 2
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -8,10 +8,11 @@
 radius = 61.72
 
 [node name="Bubble" type="Node2D"]
+position = Vector2(374, 464)
 script = ExtResource("1_4a276")
+damage = 1
 
 [node name="Node2D" type="Node2D" parent="."]
-position = Vector2(215, 464)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D"]
@@ -20,6 +21,8 @@ texture = ExtResource("2_05jx6")
 
 [node name="HitboxComponent" type="Area2D" parent="Node2D"]
 unique_name_in_owner = true
+collision_layer = 512
+collision_mask = 0
 script = ExtResource("3_4cx2n")
 metadata/_custom_type_script = "uid://dynrr434jfajv"
 

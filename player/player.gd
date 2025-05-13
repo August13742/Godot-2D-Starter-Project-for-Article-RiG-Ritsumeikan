@@ -27,8 +27,9 @@ extends CharacterBody2D
 @export var dash_cooldown:float = 5.0
 @export var shoot_cooldown:float = 0.5
 @export var bullet:= preload("res://bullet1.tscn")
+@export var sword_trail := preload("res://sword_trail.tscn")
 
-
+var can_special:bool = true
 var can_dash:bool = true
 
 var shoot_hold:bool = false
@@ -87,5 +88,17 @@ func shoot():
 		bullet_scene.direction = Vector2.LEFT
 		bullet_scene.sprite.flip_h = true
 
+func special():
+	if state_machine.current_state == state_machine.states[state_machine.Idle]:
+		animation_player.play("sword_slash")
 
+	await get_tree().create_timer(0.2).timeout
+	var sword_trail_scene:Node2D = sword_trail.instantiate()
+	get_tree().get_first_node_in_group("foreground_layer").add_child(sword_trail_scene)
+	sword_trail_scene.global_position = self.global_position
+	if !last_faced_right:
+		sword_trail_scene.scale.x = -1
+		sword_trail_scene.direction = Vector2.LEFT	
+	await get_tree().create_timer(1).timeout
+	sword_trail_scene.call_deferred("queue_free")
 	

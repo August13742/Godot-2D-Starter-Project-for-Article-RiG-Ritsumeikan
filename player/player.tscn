@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=3 uid="uid://bo484frb127rp"]
+[gd_scene load_steps=103 format=3 uid="uid://bo484frb127rp"]
 
 [ext_resource type="Script" uid="uid://cbxx55kdciymr" path="res://player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://d2j5a2amhfn8q" path="res://StateMachine/dash.png" id="2_hg6s5"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dkigmclffiei8" path="res://StateMachine/player land 48x48.png" id="6_yllr7"]
 [ext_resource type="Texture2D" uid="uid://bmpgnurvmkpcp" path="res://StateMachine/Player Running Aiming 48x48.png" id="7_yllr7"]
 [ext_resource type="Texture2D" uid="uid://u25gbp4yxo5w" path="res://StateMachine/Player Running Shooting 48x48.png" id="8_kb6p2"]
+[ext_resource type="Texture2D" uid="uid://bmwp14840b0k4" path="res://StateMachine/player katana attack-sheathe 80x64.png" id="10_wodsf"]
 [ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://hurtbox_component.tscn" id="12_ebec5"]
 [ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://health_bar.tscn" id="14_kb6p2"]
 
@@ -243,6 +244,46 @@ region = Rect2(384, 0, 48, 48)
 atlas = ExtResource("6_ebec5")
 region = Rect2(432, 0, 48, 48)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdjat"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j420s"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcq4v"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qavcc"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bd26m"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(320, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lufic"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(400, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxclr"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(480, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onxu2"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(560, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gci7n"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(640, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tcwf7"]
+atlas = ExtResource("10_wodsf")
+region = Rect2(720, 0, 80, 64)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_mmwog"]
 atlas = ExtResource("7_yllr7")
 region = Rect2(0, 0, 48, 48)
@@ -356,7 +397,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"hurt",
-"speed": 15.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -514,6 +555,41 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_jdjat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j420s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcq4v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qavcc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bd26m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lufic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxclr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_onxu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gci7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tcwf7")
+}],
+"loop": false,
+"name": &"sword_slash",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_mmwog")
 }, {
 "duration": 1.0,
@@ -582,9 +658,9 @@ bg_color = Color(0.678431, 0.568627, 0.580392, 0)
 bg_color = Color(0.072, 0.48, 0.174, 0.772549)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
-collision_mask = 272
+collision_mask = 16
 script = ExtResource("1_onrkg")
-max_health = 30
+max_health = 50
 state_machine_debug = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -626,8 +702,6 @@ scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_ebec5")
 animation = &"hurt"
 autoplay = "idle"
-frame = 3
-frame_progress = 1.0
 offset = Vector2(0, -16)
 
 [node name="StateMachine" parent="." instance=ExtResource("3_yw30f")]

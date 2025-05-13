@@ -25,6 +25,7 @@ func update(_delta:float):
 	#if !animation_player.is_playing(): animation_player.play("idle")
 
 
-
+func can_special():
+	return true
 
 func exit(): pass

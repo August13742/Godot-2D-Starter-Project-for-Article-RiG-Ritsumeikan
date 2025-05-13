@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3m0wc7n3p8nx"
-path="res://.godot/imported/player air spin 48x48.png-204c8cc844b2be78ff6b47e371fafa7f.ctex"
+uid="uid://bmwp14840b0k4"
+path="res://.godot/imported/player katana attack-sheathe 80x64.png-3c8e8b66e1afad6f2a4a8d6d9820dff4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://StateMachine/player air spin 48x48.png"
-dest_files=["res://.godot/imported/player air spin 48x48.png-204c8cc844b2be78ff6b47e371fafa7f.ctex"]
+source_file="res://StateMachine/player katana attack-sheathe 80x64.png"
+dest_files=["res://.godot/imported/player katana attack-sheathe 80x64.png-3c8e8b66e1afad6f2a4a8d6d9820dff4.ctex"]
 
 [params]
 

@@ -34,9 +34,13 @@ func handle_input(_event: InputEvent):
 
 	if _event.is_action_pressed("dash") && can_dash() && root_entity.can_dash:
 		dash()
+		
+	if _event.is_action_pressed("special") && can_special() && root_entity.can_special:
+		root_entity.special()
 
 
-
+func can_special() ->bool:
+	return false
 
 func can_dash() -> bool:
 	return true  # default: all states can dash

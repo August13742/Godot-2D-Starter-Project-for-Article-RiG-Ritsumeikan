@@ -28,7 +28,7 @@ func can_jump() -> bool:
 	return false  # disable jumping when airborne
 
 func can_shoot() -> bool:
-	return false 
-	
+	return true
+
 func exit():
 	pass

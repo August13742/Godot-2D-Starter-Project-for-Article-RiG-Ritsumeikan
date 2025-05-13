@@ -5,7 +5,7 @@ class_name SprintState
 func enter():
 	super()
 	animation_player.play("sprint")
-	
+
 
 
 func update(delta:float):
@@ -29,3 +29,6 @@ func update(delta:float):
 
 	root_entity.move_and_slide()
 	root_entity.apply_floor_snap()
+
+func can_shoot():
+	return false

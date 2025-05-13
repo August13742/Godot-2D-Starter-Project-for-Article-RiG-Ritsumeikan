@@ -5,7 +5,7 @@ class_name DashState
 
 func enter():
 	super()
-	
+
 	animation_player.play("dash")
 	root_entity.hurtbox_collision.disabled = true
 	root_entity.can_dash = false
@@ -20,10 +20,10 @@ func update(delta:float):
 		if input_x != 0:
 			owner.change_state(StateMachine.Walk)
 			return
-			
+
 		owner.change_state(StateMachine.Idle)
 		return
-	
+
 
 	var accel:float = root_entity.dash_acceleration
 	var speed:float = root_entity.dash_speed
@@ -39,3 +39,6 @@ func exit():
 
 func handle_input(_event: InputEvent):
 	pass
+
+func can_shoot():
+	return false

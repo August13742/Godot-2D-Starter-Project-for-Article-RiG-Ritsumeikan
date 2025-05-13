@@ -9,7 +9,7 @@ var animation_player:AnimatedSprite2D
 func set_root(entity: Node2D) -> void:
 	root_entity = entity
 	animation_player = root_entity.animation_player
-	
+
 func enter():
 	root_entity.debug_label.text = self.name
 
@@ -21,17 +21,16 @@ func exit():
 
 
 func handle_input(_event: InputEvent):
-	if _event.is_action_pressed("jump"):
-		if can_jump():
-			jump()
-			
-	if _event.is_action_pressed("dash"):
-		if can_dash() && root_entity.can_dash:
-			dash()
-			
-	if _event.is_action_pressed("shoot"):
-		if can_shoot():
-			shoot()
+	if _event.is_action_pressed("shoot") && can_shoot() && root_entity.can_shoot:
+		print("hi")
+		root_entity.shoot()
+
+	if _event.is_action_pressed("jump") && can_jump():
+		jump()
+
+	if _event.is_action_pressed("dash") && can_dash() && root_entity.can_dash:
+		dash()
+
 
 
 
@@ -50,6 +49,3 @@ func jump():
 
 func dash():
 	root_entity.state_machine.change_state(StateMachine.Dash)
-	
-func shoot():
-	pass

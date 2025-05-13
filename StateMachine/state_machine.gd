@@ -20,7 +20,7 @@ func _ready():
 	states[Walk] = $Walk
 	states[Sprint] = $Sprint
 	states[Airbourne] = $Airbourne
-	
+
 	states[Hurt] = $Hurt
 	states[Dash] = $Dash
 

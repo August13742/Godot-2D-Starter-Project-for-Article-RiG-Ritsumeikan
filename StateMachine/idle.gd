@@ -8,10 +8,10 @@ func enter():
 
 	if animation_player.animation == "land":
 		return
-		
+
 	animation_player.play("idle")
 
-	
+
 func update(_delta:float):
 	var input_x:float = root_entity.input_x
 	if input_x != 0:
@@ -23,6 +23,8 @@ func update(_delta:float):
 		owner.change_state(StateMachine.Airbourne)
 
 	if !animation_player.is_playing(): animation_player.play("idle")
+
+
 
 
 func exit(): pass

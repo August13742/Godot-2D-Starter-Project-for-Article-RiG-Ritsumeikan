@@ -7,7 +7,7 @@ class_name WalkState
 func enter():
 	super()
 	animation_player.play("walk")
-	
+
 
 
 func update(delta:float):

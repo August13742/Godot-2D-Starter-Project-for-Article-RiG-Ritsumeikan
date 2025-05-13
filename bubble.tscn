@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfd6624nvv6t8"]
+
+[ext_resource type="Script" uid="uid://c1rbdlofmwogh" path="res://bubble.gd" id="1_4a276"]
+[ext_resource type="Texture2D" uid="uid://d0cwqfvkbllm7" path="res://ProjectileAssets/bubble.png" id="2_05jx6"]
+[ext_resource type="Script" uid="uid://dynrr434jfajv" path="res://hitbox_component.gd" id="3_4cx2n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1pskq"]
+radius = 61.72
+
+[node name="Bubble" type="Node2D"]
+script = ExtResource("1_4a276")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(215, 464)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_05jx6")
+
+[node name="HitboxComponent" type="Area2D" parent="Node2D"]
+unique_name_in_owner = true
+script = ExtResource("3_4cx2n")
+metadata/_custom_type_script = "uid://dynrr434jfajv"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/HitboxComponent"]
+shape = SubResource("CircleShape2D_1pskq")
+debug_color = Color(1, 0, 0.0666666, 0.419608)

@@ -8,7 +8,6 @@
 radius = 61.72
 
 [node name="Bubble" type="Node2D"]
-position = Vector2(374, 464)
 script = ExtResource("1_4a276")
 damage = 1
 

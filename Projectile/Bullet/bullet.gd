@@ -15,7 +15,7 @@ var current_speed:float = 0
 func _ready() -> void:
 	bullet_tween.call_deferred()
 	visible_on_screen_notifier_2d.screen_exited.connect(queue_free)
-	
+
 	self.hitbox_component.damage = damage
 	hitbox_component.area_entered.connect(on_area_entered)
 func bullet_tween()->void:
@@ -33,4 +33,3 @@ func _physics_process(delta: float) -> void:
 func on_area_entered(other:Node2D):
 	if other is HurtboxComponent:
 		queue_free.call_deferred()
-		

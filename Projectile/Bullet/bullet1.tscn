@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://sq2t0bfbhaar"]
 
-[ext_resource type="Script" uid="uid://bc2tnimheqgqg" path="res://bullet.gd" id="1_f7cwy"]
-[ext_resource type="Texture2D" uid="uid://c8svxefftwdr8" path="res://ProjectileAssets/bullet1.png" id="2_jtecg"]
-[ext_resource type="PackedScene" uid="uid://dbkiesuy3byre" path="res://hitbox_component.tscn" id="3_48bpi"]
+[ext_resource type="Script" uid="uid://bc2tnimheqgqg" path="res://Projectile/Bullet/bullet.gd" id="1_f7cwy"]
+[ext_resource type="Texture2D" uid="uid://c8svxefftwdr8" path="res://Assets/ProjectileAssets/bullet1.png" id="2_jtecg"]
+[ext_resource type="PackedScene" uid="uid://dbkiesuy3byre" path="res://HealthSystem/hitbox_component.tscn" id="3_48bpi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f7cwy"]
 radius = 15.0

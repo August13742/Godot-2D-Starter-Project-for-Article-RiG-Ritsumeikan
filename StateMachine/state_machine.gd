@@ -29,7 +29,7 @@ func _ready():
 
 
 	change_state.call_deferred(StateMachine.Idle)
-	
+
 	late_init.call_deferred()
 
 func late_init():

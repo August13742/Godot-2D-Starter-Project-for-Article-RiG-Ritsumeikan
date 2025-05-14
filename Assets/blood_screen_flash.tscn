@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwfy27hy7pu3p"]
 
-[ext_resource type="Texture2D" uid="uid://8rdb35yr8kue" path="res://blood_screen_effect.png" id="1_58pxo"]
+[ext_resource type="Texture2D" uid="uid://8rdb35yr8kue" path="res://Assets/blood_screen_effect.png" id="1_58pxo"]
 
 [node name="BloodScreenFlash" type="CanvasLayer"]
 

@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bo484frb127rp" path="res://player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cu5djtj36skme" path="res://enemy/enemy.tscn" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://d3xc545yhs4m4" path="res://camera_2d.gd" id="3_h2yge"]
-[ext_resource type="Texture2D" uid="uid://cruearff1ip5x" path="res://Space Background.png" id="6_7mycd"]
-[ext_resource type="Texture2D" uid="uid://dun6bwnug3qu8" path="res://TX Tileset Ground.png" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://cruearff1ip5x" path="res://Assets/Space Background.png" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://dun6bwnug3qu8" path="res://Assets/TX Tileset Ground.png" id="6_272bh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
 texture = ExtResource("6_272bh")
@@ -684,6 +684,5 @@ script = ExtResource("3_h2yge")
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(-135, 282)
-collision_mask = 16
 
 [node name="foreground" type="Node2D" parent="." groups=["foreground_layer"]]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cbxx55kdciymr" path="res://player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://d2j5a2amhfn8q" path="res://StateMachine/dash.png" id="2_hg6s5"]
-[ext_resource type="PackedScene" uid="uid://cl5s0wnq88amv" path="res://health_component.tscn" id="2_kb6p2"]
+[ext_resource type="PackedScene" uid="uid://cl5s0wnq88amv" path="res://HealthSystem/health_component.tscn" id="2_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://sx30nc5uv87v" path="res://StateMachine/Player Hurt 48x48.png" id="3_8t03j"]
 [ext_resource type="Texture2D" uid="uid://fc5mat8bdmb5" path="res://StateMachine/player run 48x48.png" id="3_g1dw6"]
 [ext_resource type="PackedScene" uid="uid://baykd0m7yn3el" path="res://StateMachine/state_machine.tscn" id="3_yw30f"]
@@ -13,8 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://bmpgnurvmkpcp" path="res://StateMachine/Player Running Aiming 48x48.png" id="7_yllr7"]
 [ext_resource type="Texture2D" uid="uid://u25gbp4yxo5w" path="res://StateMachine/Player Running Shooting 48x48.png" id="8_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://bmwp14840b0k4" path="res://StateMachine/player katana attack-sheathe 80x64.png" id="10_wodsf"]
-[ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://hurtbox_component.tscn" id="12_ebec5"]
-[ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://health_bar.tscn" id="14_kb6p2"]
+[ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://HealthSystem/hurtbox_component.tscn" id="12_ebec5"]
+[ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://HealthSystem/health_bar.tscn" id="14_kb6p2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
 radius = 23.0

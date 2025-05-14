@@ -26,8 +26,8 @@ extends CharacterBody2D
 
 @export var dash_cooldown:float = 5.0
 @export var shoot_cooldown:float = 0.5
-@export var bullet:= preload("res://bullet1.tscn")
-@export var sword_trail := preload("res://sword_trail.tscn")
+@export var bullet:= preload("uid://sq2t0bfbhaar")
+@export var sword_trail := preload("uid://bf6tsfypt3so")
 
 var can_special:bool = true
 var can_dash:bool = true
@@ -44,8 +44,8 @@ func _ready():
 
 	health_component.max_health = max_health
 	health_component.full_heal()
-	
-	
+
+
 func _physics_process(delta):
 	input_x = Input.get_action_strength("right") - Input.get_action_strength("left")
 
@@ -98,7 +98,6 @@ func special():
 	sword_trail_scene.global_position = self.global_position
 	if !last_faced_right:
 		sword_trail_scene.scale.x = -1
-		sword_trail_scene.direction = Vector2.LEFT	
+		sword_trail_scene.direction = Vector2.LEFT
 	await get_tree().create_timer(1).timeout
 	sword_trail_scene.call_deferred("queue_free")
-	

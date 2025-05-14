@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dun6bwnug3qu8"
-path="res://.godot/imported/TX Tileset Ground.png-d6ef34d8256ca36c2efcd6002a1f28a4.ctex"
+uid="uid://d0cwqfvkbllm7"
+path="res://.godot/imported/bubble.png-0446a024457a19560d98e18129c7dad6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TX Tileset Ground.png"
-dest_files=["res://.godot/imported/TX Tileset Ground.png-d6ef34d8256ca36c2efcd6002a1f28a4.ctex"]
+source_file="res://Assets/ProjectileAssets/bubble.png"
+dest_files=["res://.godot/imported/bubble.png-0446a024457a19560d98e18129c7dad6.ctex"]
 
 [params]
 

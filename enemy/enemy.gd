@@ -56,11 +56,11 @@ func _ready():
 
 	action_timer.wait_time = action_cd
 	action_timer.timeout.connect(on_action_timer_timeout)
-	
-	health_component.received_damage.connect(_on_damaged)
-	
 
-	
+	health_component.received_damage.connect(_on_damaged)
+
+
+
 func bubble_attack():
 	if sprite.flip_h:
 		for i in range (3):
@@ -76,18 +76,18 @@ func bubble_attack():
 				bubble.direction = PROJECTILE_DIRECTIONS_RIGHT[i]
 				bubble.global_position = self.global_position
 				await get_tree().create_timer(0.5 * (i+1)).timeout
-	
+
 	action_timer.start(action_cd)
-				
+
 func on_action_timer_timeout():
 	can_perform_action = true
-	
-	
+
+
 func determine_action():
 	var rand_num:float = randf()
 	if rand_num < 0.6:
 		trigger_jump()
-		
+
 	else:
 		bubble_attack()
 		can_perform_action = false
@@ -97,7 +97,7 @@ func trigger_jump():
 		jump_tween()
 		hitbox.set_deferred("disabled",true)
 		can_jump = false
-		
+
 func jump_tween():
 	var tween1 = create_tween()
 
@@ -171,7 +171,7 @@ func _tween_callback():
 	jump_cd.start(wait_time)
 	can_jump = true
 	action_timer.start(action_cd)
-	
+
 func _process(_delta: float) -> void:
 	sprite.flip_h = true if (target.global_position.x - self.global_position.x) < 0 else false
 	red_sprite.flip_h = true if sprite.flip_h else false
@@ -179,7 +179,7 @@ func _process(_delta: float) -> void:
 
 func _on_jump_timer_timeout():
 	can_jump = true
-	
+
 func _on_damaged():
 	red_sprite.visible = true
 	await get_tree().create_timer(0.15).timeout

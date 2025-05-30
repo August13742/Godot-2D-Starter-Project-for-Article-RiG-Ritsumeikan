@@ -3,11 +3,7 @@
 [ext_resource type="Script" uid="uid://cbxx55kdciymr" path="res://player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://d2j5a2amhfn8q" path="res://StateMachine/dash.png" id="2_hg6s5"]
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://cl5s0wnq88amv" path="res://HealthSystem/health_component.tscn" id="2_kb6p2"]
-=======
-[ext_resource type="PackedScene" uid="uid://cl5s0wnq88amv" path="res://player/health_component.tscn" id="2_kb6p2"]
->>>>>>> Stashed changes
 =======
 [ext_resource type="PackedScene" uid="uid://cl5s0wnq88amv" path="res://player/health_component.tscn" id="2_kb6p2"]
 >>>>>>> Stashed changes
@@ -22,13 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://u25gbp4yxo5w" path="res://StateMachine/Player Running Shooting 48x48.png" id="8_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://bmwp14840b0k4" path="res://StateMachine/player katana attack-sheathe 80x64.png" id="10_wodsf"]
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://HealthSystem/hurtbox_component.tscn" id="12_ebec5"]
 [ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://HealthSystem/health_bar.tscn" id="14_kb6p2"]
-=======
-[ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://player/hurtbox_component.tscn" id="12_ebec5"]
-[ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://UI/health_bar.tscn" id="14_kb6p2"]
->>>>>>> Stashed changes
 =======
 [ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://player/hurtbox_component.tscn" id="12_ebec5"]
 [ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://UI/health_bar.tscn" id="14_kb6p2"]

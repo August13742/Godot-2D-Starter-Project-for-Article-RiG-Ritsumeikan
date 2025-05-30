@@ -45,13 +45,8 @@ func _ready():
 	health_component.max_health = max_health
 	health_component.full_heal()
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
 
-=======
-	health_component.died.connect(EventSystem.player_died)
-	
->>>>>>> Stashed changes
 =======
 	health_component.died.connect(EventSystem.player_died)
 	

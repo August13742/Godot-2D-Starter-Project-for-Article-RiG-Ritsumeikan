@@ -686,10 +686,6 @@ script = ExtResource("3_h2yge")
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(-135, 282)
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-max_health = 1
->>>>>>> Stashed changes
 =======
 max_health = 1
 >>>>>>> Stashed changes

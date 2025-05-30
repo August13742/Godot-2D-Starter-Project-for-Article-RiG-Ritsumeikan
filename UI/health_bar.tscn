@@ -1,14 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfpyvfdq43g0y"]
 
-<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:HealthSystem/health_bar.tscn
 [ext_resource type="Script" uid="uid://dowi1xcvwa1tl" path="res://HealthSystem/health_bar.gd" id="1_m7ell"]
 ========
 [ext_resource type="Script" uid="uid://dowi1xcvwa1tl" path="res://UI/health_bar.gd" id="1_m7ell"]
 >>>>>>>> Stashed changes:UI/health_bar.tscn
-=======
-[ext_resource type="Script" uid="uid://dowi1xcvwa1tl" path="res://UI/health_bar.gd" id="1_m7ell"]
->>>>>>> Stashed changes
 
 [node name="HealthBar" type="ProgressBar"]
 offset_right = 4.0

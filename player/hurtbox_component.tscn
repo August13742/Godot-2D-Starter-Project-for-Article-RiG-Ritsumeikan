@@ -1,14 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://xxpfvl2cp1ib"]
 
-<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:HealthSystem/hurtbox_component.tscn
 [ext_resource type="Script" uid="uid://cmu8nnkdm8sl5" path="res://HealthSystem/hurtbox_component.gd" id="1_f5427"]
 ========
 [ext_resource type="Script" uid="uid://cmu8nnkdm8sl5" path="res://player/hurtbox_component.gd" id="1_f5427"]
 >>>>>>>> Stashed changes:player/hurtbox_component.tscn
-=======
-[ext_resource type="Script" uid="uid://cmu8nnkdm8sl5" path="res://player/hurtbox_component.gd" id="1_f5427"]
->>>>>>> Stashed changes
 
 [node name="HurtboxComponent" type="Area2D"]
 script = ExtResource("1_f5427")

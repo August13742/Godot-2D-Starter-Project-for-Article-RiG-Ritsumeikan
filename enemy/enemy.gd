@@ -52,11 +52,14 @@ func _ready():
 	
 	health_component.received_damage.connect(_on_damaged)
 	health_component.died.connect(EventSystem.slime_died)
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
 	health_component.received_damage.connect(_on_damaged)
 
 
+=======
+>>>>>>> Stashed changes
 
 func bubble_attack():
 	if sprite.flip_h:
@@ -173,6 +176,9 @@ func _tween_callback():
 =======
 	
 var target_global_pos:Vector2 = Vector2.ZERO
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 func _process(_delta: float) -> void:
 	if target == null: return

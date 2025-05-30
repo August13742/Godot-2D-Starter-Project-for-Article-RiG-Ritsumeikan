@@ -2,10 +2,18 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://8rdb35yr8kue"
 <<<<<<<< Updated upstream:Assets/blood_screen_effect.png.import
 path="res://.godot/imported/blood_screen_effect.png-af8506e5b3bfdf9ef3491970a0e70ecb.ctex"
 ========
+=======
+<<<<<<<< Updated upstream:UI/Assets/UI1.png.import
+uid="uid://bv27fxwpl20py"
+path="res://.godot/imported/UI1.png-3c7ad5ebf4beafbd4fabffa11d277b98.ctex"
+========
+uid="uid://8rdb35yr8kue"
+>>>>>>> Stashed changes
 path="res://.godot/imported/blood_screen_effect.png-bc969b2fa7ad86519563f98d55e05c91.ctex"
 >>>>>>>> Stashed changes:player/blood_screen_effect.png.import
 metadata={
@@ -14,9 +22,15 @@ metadata={
 
 [deps]
 
+<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:Assets/blood_screen_effect.png.import
 source_file="res://Assets/blood_screen_effect.png"
 dest_files=["res://.godot/imported/blood_screen_effect.png-af8506e5b3bfdf9ef3491970a0e70ecb.ctex"]
+=======
+<<<<<<<< Updated upstream:UI/Assets/UI1.png.import
+source_file="res://UI/Assets/UI1.png"
+dest_files=["res://.godot/imported/UI1.png-3c7ad5ebf4beafbd4fabffa11d277b98.ctex"]
+>>>>>>> Stashed changes
 ========
 source_file="res://player/blood_screen_effect.png"
 dest_files=["res://.godot/imported/blood_screen_effect.png-bc969b2fa7ad86519563f98d55e05c91.ctex"]

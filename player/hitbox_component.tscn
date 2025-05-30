@@ -1,10 +1,14 @@
 [gd_scene load_steps=2 format=3 uid="uid://dbkiesuy3byre"]
 
+<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:HealthSystem/hitbox_component.tscn
 [ext_resource type="Script" uid="uid://dynrr434jfajv" path="res://HealthSystem/hitbox_component.gd" id="1_ouix1"]
 ========
 [ext_resource type="Script" uid="uid://dynrr434jfajv" path="res://player/hitbox_component.gd" id="1_ouix1"]
 >>>>>>>> Stashed changes:player/hitbox_component.tscn
+=======
+[ext_resource type="Script" uid="uid://dynrr434jfajv" path="res://player/hitbox_component.gd" id="1_ouix1"]
+>>>>>>> Stashed changes
 
 [node name="HitboxComponent" type="Area2D"]
 collision_layer = 2

@@ -1,5 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://sq2t0bfbhaar"]
 
+<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:Projectile/Bullet/bullet1.tscn
 [ext_resource type="Script" uid="uid://bc2tnimheqgqg" path="res://Projectile/Bullet/bullet.gd" id="1_f7cwy"]
 [ext_resource type="Texture2D" uid="uid://c8svxefftwdr8" path="res://Assets/ProjectileAssets/bullet1.png" id="2_jtecg"]
@@ -9,6 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://c8svxefftwdr8" path="res://ProjectileAssets/bullet1.png" id="2_jtecg"]
 [ext_resource type="PackedScene" uid="uid://dbkiesuy3byre" path="res://player/hitbox_component.tscn" id="3_48bpi"]
 >>>>>>>> Stashed changes:player/bullet1.tscn
+=======
+[ext_resource type="Script" uid="uid://bc2tnimheqgqg" path="res://player/bullet.gd" id="1_f7cwy"]
+[ext_resource type="Texture2D" uid="uid://c8svxefftwdr8" path="res://ProjectileAssets/bullet1.png" id="2_jtecg"]
+[ext_resource type="PackedScene" uid="uid://dbkiesuy3byre" path="res://player/hitbox_component.tscn" id="3_48bpi"]
+>>>>>>> Stashed changes
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f7cwy"]
 radius = 15.0

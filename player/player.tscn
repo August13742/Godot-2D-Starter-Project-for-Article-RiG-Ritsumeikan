@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://bo484frb127rp"]
+[gd_scene load_steps=102 format=3 uid="uid://bo484frb127rp"]
 
 [ext_resource type="Script" uid="uid://cbxx55kdciymr" path="res://player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://d2j5a2amhfn8q" path="res://StateMachine/dash.png" id="2_hg6s5"]
@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://u25gbp4yxo5w" path="res://StateMachine/Player Running Shooting 48x48.png" id="8_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://bmwp14840b0k4" path="res://StateMachine/player katana attack-sheathe 80x64.png" id="10_wodsf"]
 [ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://HealthSystem/hurtbox_component.tscn" id="12_ebec5"]
-[ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://HealthSystem/health_bar.tscn" id="14_kb6p2"]
+[ext_resource type="PackedScene" path="res://HealthSystem/health_bar.tscn" id="15_wodsf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
 radius = 23.0
@@ -651,11 +651,17 @@ animations = [{
 radius = 18.0
 height = 84.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wodsf"]
-bg_color = Color(0.678431, 0.568627, 0.580392, 0)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32hag"]
-bg_color = Color(0.072, 0.48, 0.174, 0.772549)
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0, 1, 0.0833333, 0.4)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 16
@@ -720,10 +726,9 @@ debug_color = Color(0.882353, 0.223529, 0.231373, 0.356863)
 wait_time = 5.0
 one_shot = true
 
-[node name="HealthBar" parent="." instance=ExtResource("14_kb6p2")]
-offset_left = -25.0
-offset_top = -149.0
-offset_right = 28.0
-offset_bottom = -122.0
-theme_override_styles/background = SubResource("StyleBoxFlat_wodsf")
+[node name="HealthBar" parent="." instance=ExtResource("15_wodsf")]
+offset_left = -35.0
+offset_top = -160.0
+offset_right = 34.0
+offset_bottom = -132.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_32hag")

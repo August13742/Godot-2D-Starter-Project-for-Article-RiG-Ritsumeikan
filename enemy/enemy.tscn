@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cl5s0wnq88amv" path="res://HealthSystem/health_component.tscn" id="4_1wwld"]
 [ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://HealthSystem/hurtbox_component.tscn" id="5_y5vj3"]
 [ext_resource type="PackedScene" uid="uid://dbkiesuy3byre" path="res://HealthSystem/hitbox_component.tscn" id="6_5ffra"]
-[ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://HealthSystem/health_bar.tscn" id="7_y5vj3"]
+[ext_resource type="PackedScene" path="res://HealthSystem/health_bar.tscn" id="7_y5vj3"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qi2p4"]
 shader = ExtResource("2_qi2p4")

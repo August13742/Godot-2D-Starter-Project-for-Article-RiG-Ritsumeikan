@@ -45,6 +45,8 @@ func _ready():
 	health_component.max_health = max_health
 	health_component.full_heal()
 
+	health_component.died.connect(EventSystem.player_died)
+	
 
 func _physics_process(delta):
 	input_x = Input.get_action_strength("right") - Input.get_action_strength("left")

@@ -27,16 +27,7 @@ var can_perform_action:bool = true
 
 @onready var sprite_material:ShaderMaterial = sprite.material
 @onready var bubble_scene:PackedScene = preload("uid://bfd6624nvv6t8")
-#const PROJECTILE_DIRECTIONS_RIGHT = [ ## but with y reversed because + is down
-	#Vector2(1.000, 0.000),   # 0°
-	#Vector2(0.906, -0.423),   # 25°
-	#Vector2(0.643, -0.766),   # 50°
-#]
-#const PROJECTILE_DIRECTIONS_LEFT = [
-	#Vector2(-1.000,  0.000),    # 180°
-	#Vector2(-0.906,  -0.423),    # 155°
-	#Vector2(-0.643,  -0.766),    # 130°
-#]
+
 const PROJECTILE_DIRECTIONS_RIGHT = [
 	Vector2(1.000, 0.000),    # 0°
 	Vector2(0.966, -0.259),    # 15°
@@ -57,7 +48,10 @@ func _ready():
 	action_timer.wait_time = action_cd
 	action_timer.timeout.connect(on_action_timer_timeout)
 
+	
 	health_component.received_damage.connect(_on_damaged)
+	health_component.died.connect(EventSystem.slime_died)
+
 
 
 
@@ -134,8 +128,8 @@ func tween_2():
 	var total_time:= move_time + drop_time
 	var offset_direction:float = Input.get_action_strength("right") - Input.get_action_strength("left")
 	var offset_multiplier:= 125
-	var target_position :Vector2= target.global_position
-	var aim_position:Vector2 = Vector2(offset_direction * offset_multiplier + target_position.x, target_position.y)
+
+	var aim_position:Vector2 = Vector2(offset_direction * offset_multiplier + target_global_pos.x, target_global_pos.y)
 
 	tween2.tween_property(self,"global_position",aim_position,move_time)\
 	.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_EXPO)
@@ -172,8 +166,13 @@ func _tween_callback():
 	can_jump = true
 	action_timer.start(action_cd)
 
+	
+var target_global_pos:Vector2 = Vector2.ZERO
+
 func _process(_delta: float) -> void:
-	sprite.flip_h = true if (target.global_position.x - self.global_position.x) < 0 else false
+	if target == null: return
+	target_global_pos = target.global_position
+	sprite.flip_h = true if (target_global_pos.x - self.global_position.x) < 0 else false
 	red_sprite.flip_h = true if sprite.flip_h else false
 	if can_perform_action: determine_action()
 

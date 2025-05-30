@@ -2,7 +2,7 @@ extends Node2D
 
 
 @export var damage:int = 2
-@export var projectile_speed:float = randi_range(650,850)
+@export var projectile_speed:float = 750
 @export var direction:Vector2 = Vector2.RIGHT
 var current_speed:float = 0
 @onready var hitbox_component: Area2D = $%HitboxComponent
@@ -17,7 +17,7 @@ func bullet_tween()->void:
 		func(value:float): current_speed = value,
 		0,
 		projectile_speed,
-		randf_range(0.2,0.5))
+		0.3)
 
 	tween.tween_method(
 		func(value:float): current_speed = value,

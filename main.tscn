@@ -676,7 +676,6 @@ tile_set = SubResource("TileSet_kek77")
 
 [node name="Enemy" parent="." instance=ExtResource("2_0xm2m")]
 position = Vector2(662, 356.265)
-max_health = 1
 action_cd = 1.5
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -685,9 +684,5 @@ script = ExtResource("3_h2yge")
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(-135, 282)
-<<<<<<< Updated upstream
-=======
-max_health = 1
->>>>>>> Stashed changes
 
 [node name="foreground" type="Node2D" parent="." groups=["foreground_layer"]]

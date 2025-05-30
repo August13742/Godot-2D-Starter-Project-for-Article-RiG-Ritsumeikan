@@ -1,20 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://bf6tsfypt3so"]
 
-<<<<<<<< Updated upstream:Projectile/SwordTrail/sword_trail.tscn
 [ext_resource type="Script" uid="uid://gh45ir752mff" path="res://Projectile/SwordTrail/sword_trail.gd" id="1_scg2v"]
 [ext_resource type="Texture2D" uid="uid://bqseatv7wt8d8" path="res://StateMachine/sword_trail/0.png" id="1_tgxm5"]
 [ext_resource type="Texture2D" uid="uid://cyd3ptep2ryio" path="res://StateMachine/sword_trail/1.png" id="2_lm1vx"]
 [ext_resource type="Texture2D" uid="uid://dqko2l8lwd2aj" path="res://StateMachine/sword_trail/2.png" id="3_u5rmu"]
 [ext_resource type="Script" uid="uid://dynrr434jfajv" path="res://HealthSystem/hitbox_component.gd" id="4_u5rmu"]
 [ext_resource type="Script" uid="uid://bg4uab50hj637" path="res://Projectile/SwordTrail/projectile_slasher.gd" id="5_scg2v"]
-========
-[ext_resource type="Script" uid="uid://gh45ir752mff" path="res://player/sword_trail.gd" id="1_scg2v"]
-[ext_resource type="Texture2D" uid="uid://bqseatv7wt8d8" path="res://StateMachine/sword_trail/0.png" id="1_tgxm5"]
-[ext_resource type="Texture2D" uid="uid://cyd3ptep2ryio" path="res://StateMachine/sword_trail/1.png" id="2_lm1vx"]
-[ext_resource type="Texture2D" uid="uid://dqko2l8lwd2aj" path="res://StateMachine/sword_trail/2.png" id="3_u5rmu"]
-[ext_resource type="Script" uid="uid://dynrr434jfajv" path="res://player/hitbox_component.gd" id="4_u5rmu"]
-[ext_resource type="Script" uid="uid://bg4uab50hj637" path="res://player/projectile_slasher.gd" id="5_scg2v"]
->>>>>>>> Stashed changes:player/sword_trail.tscn
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_scg2v"]
 animations = [{

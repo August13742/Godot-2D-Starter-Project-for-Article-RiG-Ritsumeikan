@@ -1,10 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwfy27hy7pu3p"]
 
-<<<<<<<< Updated upstream:Assets/blood_screen_flash.tscn
 [ext_resource type="Texture2D" uid="uid://8rdb35yr8kue" path="res://Assets/blood_screen_effect.png" id="1_58pxo"]
-========
-[ext_resource type="Texture2D" uid="uid://8rdb35yr8kue" path="res://player/blood_screen_effect.png" id="1_58pxo"]
->>>>>>>> Stashed changes:player/blood_screen_flash.tscn
 
 [node name="BloodScreenFlash" type="CanvasLayer"]
 

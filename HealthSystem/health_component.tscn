@@ -1,10 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cl5s0wnq88amv"]
 
-<<<<<<<< Updated upstream:HealthSystem/health_component.tscn
 [ext_resource type="Script" uid="uid://qftum67142ke" path="res://HealthSystem/health_component.gd" id="1_n21r7"]
-========
-[ext_resource type="Script" uid="uid://qftum67142ke" path="res://player/health_component.gd" id="1_n21r7"]
->>>>>>>> Stashed changes:player/health_component.tscn
 
 [node name="HealthComponent" type="Node"]
 script = ExtResource("1_n21r7")

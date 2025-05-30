@@ -3,24 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8rdb35yr8kue"
-<<<<<<<< Updated upstream:Assets/blood_screen_effect.png.import
 path="res://.godot/imported/blood_screen_effect.png-af8506e5b3bfdf9ef3491970a0e70ecb.ctex"
-========
-path="res://.godot/imported/blood_screen_effect.png-bc969b2fa7ad86519563f98d55e05c91.ctex"
->>>>>>>> Stashed changes:player/blood_screen_effect.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< Updated upstream:Assets/blood_screen_effect.png.import
 source_file="res://Assets/blood_screen_effect.png"
 dest_files=["res://.godot/imported/blood_screen_effect.png-af8506e5b3bfdf9ef3491970a0e70ecb.ctex"]
-========
-source_file="res://player/blood_screen_effect.png"
-dest_files=["res://.godot/imported/blood_screen_effect.png-bc969b2fa7ad86519563f98d55e05c91.ctex"]
->>>>>>>> Stashed changes:player/blood_screen_effect.png.import
 
 [params]
 

@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bhascbbi372cj"]
+
+[ext_resource type="FontFile" uid="uid://bxubstbe0knhw" path="res://UI/Font/魔導太丸ゴシック.ttf" id="1_mg8jf"]
+
+[resource]
+default_font = ExtResource("1_mg8jf")
+default_font_size = 24
+Button/colors/font_hover_color = Color(0.95, 0, 0, 1)

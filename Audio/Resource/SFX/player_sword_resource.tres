@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://ikm4m224oy6a"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_mcl14"]
+[ext_resource type="AudioStream" uid="uid://dw14gmffp8xsi" path="res://Audio/SFX/Sword Woosh 16.wav" id="2_cdvif"]
+
+[resource]
+script = ExtResource("1_mcl14")
+event_name = &"player_special_sword"
+stream = ExtResource("2_cdvif")
+loop = false
+volume_linear = 1.0
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

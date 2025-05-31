@@ -6,6 +6,7 @@ var red_screen:Node
 func enter():
 	super()
 	animation_player.play("hurt")
+	AudioManager.play_sfx(root_entity.hurt_audio_resource)
 	red_screen = EventSystem.trigger_red_screen()
 	get_tree().get_first_node_in_group("foreground_layer").add_child(red_screen)
 

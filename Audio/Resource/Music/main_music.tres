@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MusicResource" load_steps=3 format=3 uid="uid://cirgrmui22ggh"]
+
+[ext_resource type="Script" uid="uid://y34mrxhlort3" path="res://Audio/Resource/Script/music_resource.gd" id="1_gryis"]
+[ext_resource type="AudioStream" uid="uid://dixdrlcin70" path="res://Audio/Music/Chanson d'Automne.. [2023 Remaster].ogg" id="2_s7ige"]
+
+[resource]
+script = ExtResource("1_gryis")
+event_name = &"main_bgm"
+stream = ExtResource("2_s7ige")
+metadata/_custom_type_script = "uid://y34mrxhlort3"

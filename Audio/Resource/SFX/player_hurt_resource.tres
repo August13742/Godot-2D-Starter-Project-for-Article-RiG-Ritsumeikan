@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://cwax4di0fx2lq"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_nsbfk"]
+[ext_resource type="AudioStream" uid="uid://ddvh32bms261t" path="res://Audio/SFX/hurt.wav" id="2_nsbfk"]
+
+[resource]
+script = ExtResource("1_nsbfk")
+event_name = &"player_hurt"
+stream = ExtResource("2_nsbfk")
+loop = false
+volume_linear = 1.0
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

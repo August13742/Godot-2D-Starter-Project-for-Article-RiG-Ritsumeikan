@@ -28,6 +28,7 @@ var can_perform_action:bool = true
 @onready var sprite_material:ShaderMaterial = sprite.material
 @onready var bubble_scene:PackedScene = preload("uid://bfd6624nvv6t8")
 
+@export var can_function:bool = true
 const PROJECTILE_DIRECTIONS_RIGHT = [
 	Vector2(1.000, 0.000),    # 0°
 	Vector2(0.966, -0.259),    # 15°
@@ -54,10 +55,11 @@ func _ready():
 
 
 
-
+@export var slime_bubble_audio_resource:SFXResource = preload("uid://bimn6n8fhjh3l")
 func bubble_attack():
 	if sprite.flip_h:
 		for i in range (3):
+				AudioManager.play_sfx(slime_bubble_audio_resource)
 				var bubble:Node2D = bubble_scene.instantiate()
 				foreground_layer.add_child(bubble)
 				bubble.direction = PROJECTILE_DIRECTIONS_LEFT[i]
@@ -65,6 +67,7 @@ func bubble_attack():
 				await get_tree().create_timer(0.5 * (i+1)).timeout
 	else:
 		for i in range (3):
+				AudioManager.play_sfx(slime_bubble_audio_resource)
 				var bubble:Node2D = bubble_scene.instantiate()
 				foreground_layer.add_child(bubble)
 				bubble.direction = PROJECTILE_DIRECTIONS_RIGHT[i]
@@ -92,9 +95,13 @@ func trigger_jump():
 		hitbox.set_deferred("disabled",true)
 		can_jump = false
 
+@export var slime_jump_audio_resource:SFXResource = preload("uid://bguo1fsm61esq")
+@export var slime_zoom_audio_resource:SFXResource = preload("uid://6f67g12etb2")
+@export var slime_land_audio_resource:SFXResource = preload("uid://bgongm6g380po")
 func jump_tween():
 	var tween1 = create_tween()
 
+	AudioManager.play_sfx(slime_jump_audio_resource)
 	tween1.tween_property(self,"scale",Vector2(1.5,1.5),0.75).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_EXPO)
 	tween1.parallel()
 	tween1.tween_property(sprite,"position:y",sprite.position.y - jump_height,0.75)\
@@ -131,11 +138,14 @@ func tween_2():
 
 	var aim_position:Vector2 = Vector2(offset_direction * offset_multiplier + target_global_pos.x, target_global_pos.y)
 
+	AudioManager.play_sfx(slime_zoom_audio_resource)
 	tween2.tween_property(self,"global_position",aim_position,move_time)\
 	.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_EXPO)
-
+	
+	
 	tween2.tween_property(sprite,"position:y",0,drop_time)\
 	.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_EXPO)
+	
 	tween2.parallel()
 	tween2.tween_method(
 		func(value:Vector2): sprite_material.set_shader_parameter("deform", value),
@@ -156,11 +166,13 @@ func tween_2():
 
 	await get_tree().create_timer(move_time*1.2).timeout
 	hitbox.disabled = false
+	AudioManager.play_sfx(slime_land_audio_resource)
 	await get_tree().create_timer(total_time*0.05).timeout
 	EventSystem.emit_trigger_camera_shake()
 
 
 func _tween_callback():
+	
 	var wait_time:float = jump_cooldown + randf_range(jump_cooldown-jump_cooldown_deviation_range,jump_cooldown+jump_cooldown_deviation_range)
 	jump_cd.start(wait_time)
 	can_jump = true
@@ -170,6 +182,7 @@ func _tween_callback():
 var target_global_pos:Vector2 = Vector2.ZERO
 
 func _process(_delta: float) -> void:
+	if !can_function: return
 	if target == null: return
 	target_global_pos = target.global_position
 	sprite.flip_h = true if (target_global_pos.x - self.global_position.x) < 0 else false
@@ -179,7 +192,9 @@ func _process(_delta: float) -> void:
 func _on_jump_timer_timeout():
 	can_jump = true
 
+@export var enemy_hurt_audio_resource:SFXResource = preload("uid://wnnn4y1050y5")
 func _on_damaged():
+	AudioManager.play_sfx(enemy_hurt_audio_resource)
 	red_sprite.visible = true
 	await get_tree().create_timer(0.15).timeout
 	red_sprite.visible = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://bg16jupjyqnku"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_d6blm"]
+[ext_resource type="AudioStream" uid="uid://4rm4j8k2masu" path="res://Audio/SFX/Body Fall 20.wav" id="2_k7tmp"]
+
+[resource]
+script = ExtResource("1_d6blm")
+event_name = &"player_land"
+stream = ExtResource("2_k7tmp")
+loop = false
+volume_linear = 0.8
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

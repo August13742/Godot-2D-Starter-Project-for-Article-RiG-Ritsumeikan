@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://u25gbp4yxo5w" path="res://StateMachine/Player Running Shooting 48x48.png" id="8_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://bmwp14840b0k4" path="res://StateMachine/player katana attack-sheathe 80x64.png" id="10_wodsf"]
 [ext_resource type="PackedScene" uid="uid://xxpfvl2cp1ib" path="res://HealthSystem/hurtbox_component.tscn" id="12_ebec5"]
-[ext_resource type="PackedScene" path="res://HealthSystem/health_bar.tscn" id="15_wodsf"]
+[ext_resource type="PackedScene" uid="uid://bfpyvfdq43g0y" path="res://HealthSystem/health_bar.tscn" id="15_wodsf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
 radius = 23.0

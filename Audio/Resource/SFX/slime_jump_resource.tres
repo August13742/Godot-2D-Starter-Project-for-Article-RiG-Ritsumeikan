@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://bguo1fsm61esq"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_iagpc"]
+[ext_resource type="AudioStream" uid="uid://bpept4fj0pkff" path="res://Audio/SFX/heavy_thud_start.wav" id="2_iagpc"]
+
+[resource]
+script = ExtResource("1_iagpc")
+event_name = &"slime_jump"
+stream = ExtResource("2_iagpc")
+loop = false
+volume_linear = 1.0
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

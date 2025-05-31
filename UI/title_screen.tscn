@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dvrtmh6s2mwog"]
+[gd_scene load_steps=5 format=3 uid="uid://dvrtmh6s2mwog"]
 
 [ext_resource type="Script" uid="uid://bu6rsidur2moq" path="res://UI/title_screen.gd" id="1_5whv5"]
 [ext_resource type="Texture2D" uid="uid://b8mvhxfdlctyd" path="res://UI/Assets/player_shoot_pose.png" id="2_816ia"]
 [ext_resource type="Texture2D" uid="uid://cixg1laesmde3" path="res://enemy/green_slime.png" id="3_udsnl"]
+[ext_resource type="Script" uid="uid://cmt20a38ftlmh" path="res://UI/audible_button.gd" id="4_816ia"]
 
 [node name="TitleScreen" type="CanvasLayer"]
 script = ExtResource("1_5whv5")
@@ -69,12 +70,14 @@ metadata/_edit_lock_ = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "Start"
+script = ExtResource("4_816ia")
 metadata/_edit_lock_ = true
 
 [node name="Quit" type="Button" parent="MarginContainer4/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "Quit"
+script = ExtResource("4_816ia")
 metadata/_edit_lock_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]

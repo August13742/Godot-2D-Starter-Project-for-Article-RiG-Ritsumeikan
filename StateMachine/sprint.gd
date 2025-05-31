@@ -5,7 +5,7 @@ class_name SprintState
 func enter():
 	super()
 	animation_player.play("sprint")
-
+	AudioManager.play_sfx(root_entity.sprint_audio_resource)
 
 
 func update(delta:float):
@@ -30,5 +30,8 @@ func update(delta:float):
 	root_entity.move_and_slide()
 	root_entity.apply_floor_snap()
 
+func exit()->void:
+	AudioManager.stop_looped_sfx(root_entity.sprint_audio_resource)
+	
 func can_shoot():
 	return false

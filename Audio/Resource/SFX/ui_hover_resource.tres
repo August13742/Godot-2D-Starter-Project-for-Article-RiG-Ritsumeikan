@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://d4bu6gix5u45"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_mpjep"]
+[ext_resource type="AudioStream" uid="uid://dyh5anqm0mqbs" path="res://Audio/SFX/Hover over button sound 36.wav" id="2_mpjep"]
+
+[resource]
+script = ExtResource("1_mpjep")
+event_name = &"ui_hover"
+stream = ExtResource("2_mpjep")
+loop = false
+volume_linear = 1.0
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

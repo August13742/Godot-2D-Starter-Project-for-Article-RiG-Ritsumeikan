@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://dqoxxj0rtshcp"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_u544j"]
+[ext_resource type="AudioStream" uid="uid://ddoe2fe5b2vhq" path="res://Audio/SFX/Barefoot Grass footsteps 1_combined.wav" id="2_yfgjc"]
+
+[resource]
+script = ExtResource("1_u544j")
+event_name = &"player_walk"
+stream = ExtResource("2_yfgjc")
+loop = true
+volume_linear = 0.25
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

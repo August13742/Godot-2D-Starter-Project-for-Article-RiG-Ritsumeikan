@@ -4,7 +4,7 @@ class_name AirbourneState
 func enter():
 	super()
 	animation_player.play("jump")
-
+	AudioManager.play_sfx(root_entity.jump_audio_resource)
 
 func update(delta:float):
 	var input_x:float = root_entity.input_x
@@ -19,6 +19,7 @@ func update(delta:float):
 
 	if root_entity.is_on_floor():
 		animation_player.play("land")
+		AudioManager.play_sfx(root_entity.land_audio_resource)
 		if input_x != 0:
 			owner.change_state(StateMachine.Sprint if Input.is_action_pressed("sprint") else StateMachine.Walk)
 		else:

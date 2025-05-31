@@ -3,7 +3,7 @@ class_name State
 extends Node
 
 
-var root_entity:Node2D
+var root_entity:Player
 var animation_player:AnimatedSprite2D
 
 func set_root(entity: Node2D) -> void:

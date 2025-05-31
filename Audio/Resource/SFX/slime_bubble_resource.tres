@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://bimn6n8fhjh3l"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_cej3j"]
+[ext_resource type="AudioStream" uid="uid://bqsupycxyssix" path="res://Audio/SFX/water_bubble_3_edited.wav" id="2_cej3j"]
+
+[resource]
+script = ExtResource("1_cej3j")
+event_name = &"slime_bubble"
+stream = ExtResource("2_cej3j")
+loop = false
+volume_linear = 0.5
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

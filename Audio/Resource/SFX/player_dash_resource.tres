@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://7by3vetv4v3r"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_bjgos"]
+[ext_resource type="AudioStream" uid="uid://cajjoshr8mvig" path="res://Audio/SFX/Swing 5.wav" id="2_1fxbd"]
+
+[resource]
+script = ExtResource("1_bjgos")
+event_name = &"player_dash"
+stream = ExtResource("2_1fxbd")
+loop = false
+volume_linear = 0.6
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

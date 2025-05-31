@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bftntt2gt7354"
+path="res://.godot/imported/Fantasy click sounds 2.wav-2c638b8710b0f1ab70d3854b800dbe80.sample"
+
+[deps]
+
+source_file="res://Audio/SFX/Fantasy click sounds 2.wav"
+dest_files=["res://.godot/imported/Fantasy click sounds 2.wav-2c638b8710b0f1ab70d3854b800dbe80.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

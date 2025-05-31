@@ -7,7 +7,7 @@ class_name WalkState
 func enter():
 	super()
 	animation_player.play("walk")
-
+	AudioManager.play_sfx(root_entity.walk_audio_resource)
 
 
 func update(delta:float):
@@ -33,3 +33,6 @@ func update(delta:float):
 	root_entity.apply_floor_snap()
 
 	if !animation_player.is_playing(): animation_player.play("walk")
+
+func exit()->void:
+	AudioManager.stop_looped_sfx(root_entity.walk_audio_resource)

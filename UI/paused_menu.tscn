@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfld8aql8j84x"]
+[gd_scene load_steps=3 format=3 uid="uid://cfld8aql8j84x"]
 
 [ext_resource type="Script" uid="uid://bylbb52btoywf" path="res://UI/paused_menu.gd" id="1_xu8ah"]
+[ext_resource type="Script" uid="uid://cmt20a38ftlmh" path="res://UI/audible_button.gd" id="2_pg5cs"]
 
 [node name="PausedMenu" type="CanvasLayer"]
 process_mode = 3
@@ -42,8 +43,10 @@ text = "一時停止"
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "Continue"
+script = ExtResource("2_pg5cs")
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "Quit"
+script = ExtResource("2_pg5cs")

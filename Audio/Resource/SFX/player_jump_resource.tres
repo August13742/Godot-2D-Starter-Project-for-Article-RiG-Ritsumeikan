@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://c85yhjkm7hyyv"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_truue"]
+[ext_resource type="AudioStream" uid="uid://bba5j52y30uc4" path="res://Audio/SFX/Jump 4.wav" id="2_qongl"]
+
+[resource]
+script = ExtResource("1_truue")
+event_name = &"player_jump"
+stream = ExtResource("2_qongl")
+loop = false
+volume_linear = 0.8
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

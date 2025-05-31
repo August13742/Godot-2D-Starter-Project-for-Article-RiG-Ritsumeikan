@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Player
 @export var max_health:int = 20
 @export var normal_speed := 300
 @export var sprint_speed := 500
@@ -28,6 +28,15 @@ extends CharacterBody2D
 @export var shoot_cooldown:float = 0.5
 @export var bullet:= preload("uid://sq2t0bfbhaar")
 @export var sword_trail := preload("uid://bf6tsfypt3so")
+
+@export var pistol_shoot_audio_resource:SFXResource = preload("uid://cv32cdeyolguw")
+@export var player_special_sword_audio_resource:SFXResource = preload("uid://ikm4m224oy6a")
+@export var walk_audio_resource:SFXResource = preload("uid://dqoxxj0rtshcp")
+@export var sprint_audio_resource:SFXResource = preload("uid://qbsylejeoe5g")
+@export var jump_audio_resource:SFXResource = preload("uid://c85yhjkm7hyyv")
+@export var land_audio_resource:SFXResource = preload("uid://bg16jupjyqnku")
+@export var dash_audio_resource:SFXResource = preload("uid://7by3vetv4v3r")
+@export var hurt_audio_resource:SFXResource = preload("uid://cwax4di0fx2lq")
 
 var can_special:bool = true
 var can_dash:bool = true
@@ -89,12 +98,14 @@ func shoot():
 	if !last_faced_right:
 		bullet_scene.direction = Vector2.LEFT
 		bullet_scene.sprite.flip_h = true
-
+	AudioManager.play_sfx(pistol_shoot_audio_resource)
+	
 func special():
 	if state_machine.current_state == state_machine.states[state_machine.Idle]:
 		animation_player.play("sword_slash")
 
 	await get_tree().create_timer(0.2).timeout
+	AudioManager.play_sfx(player_special_sword_audio_resource)
 	var sword_trail_scene:Node2D = sword_trail.instantiate()
 	get_tree().get_first_node_in_group("foreground_layer").add_child(sword_trail_scene)
 	sword_trail_scene.global_position = self.global_position

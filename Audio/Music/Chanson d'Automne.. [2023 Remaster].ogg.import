@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dixdrlcin70"
+path="res://.godot/imported/Chanson d'Automne.. [2023 Remaster].ogg-d20ad784d7318dcccf79d6894334fffd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Audio/Music/Chanson d'Automne.. [2023 Remaster].ogg"
+dest_files=["res://.godot/imported/Chanson d'Automne.. [2023 Remaster].ogg-d20ad784d7318dcccf79d6894334fffd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

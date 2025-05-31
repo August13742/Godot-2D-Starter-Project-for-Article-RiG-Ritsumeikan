@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://bgongm6g380po"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_l5xna"]
+[ext_resource type="AudioStream" uid="uid://djii3xijq3f0m" path="res://Audio/SFX/heavy_thud_end.wav" id="2_l5xna"]
+
+[resource]
+script = ExtResource("1_l5xna")
+event_name = &"slime_land"
+stream = ExtResource("2_l5xna")
+loop = false
+volume_linear = 2.0
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

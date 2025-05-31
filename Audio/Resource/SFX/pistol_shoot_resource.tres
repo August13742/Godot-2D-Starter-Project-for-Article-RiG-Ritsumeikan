@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://cv32cdeyolguw"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_mh2w4"]
+[ext_resource type="AudioStream" uid="uid://emuakemo7jej" path="res://Audio/SFX/Pistol Shot_03.wav" id="2_mh2w4"]
+
+[resource]
+script = ExtResource("1_mh2w4")
+event_name = &"pistol_shoot"
+stream = ExtResource("2_mh2w4")
+loop = false
+volume_linear = 1.0
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

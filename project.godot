@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 EventSystem="*res://event_system.gd"
+AudioManager="*res://Audio/AudioManager.gd"
 
 [display]
 

@@ -7,6 +7,7 @@ func enter():
 	super()
 
 	animation_player.play("dash")
+	AudioManager.play_sfx(root_entity.dash_audio_resource)
 	root_entity.hurtbox_collision.disabled = true
 	root_entity.can_dash = false
 	root_entity.dash_timer.start(root_entity.dash_cooldown)
@@ -36,6 +37,7 @@ func update(delta:float):
 
 func exit():
 	root_entity.hurtbox_collision.disabled = false
+	
 
 func handle_input(_event: InputEvent):
 	pass

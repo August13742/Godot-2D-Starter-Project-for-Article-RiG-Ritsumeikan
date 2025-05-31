@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SFXResource" load_steps=3 format=3 uid="uid://b5efmh1qdopx3"]
+
+[ext_resource type="Script" uid="uid://dflujhnkuiakc" path="res://Audio/Resource/Script/sfx_audio_resource.gd" id="1_vwku7"]
+[ext_resource type="AudioStream" uid="uid://bftntt2gt7354" path="res://Audio/SFX/Fantasy click sounds 2.wav" id="2_vwku7"]
+
+[resource]
+script = ExtResource("1_vwku7")
+event_name = &"ui_click"
+stream = ExtResource("2_vwku7")
+loop = false
+volume_linear = 1.0
+pitch_scale = 1.0
+metadata/_custom_type_script = "uid://dflujhnkuiakc"

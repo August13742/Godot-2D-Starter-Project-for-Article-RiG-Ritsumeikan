@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bm2i2t7f3kg1n"]
+
+[ext_resource type="Shader" uid="uid://csal65pghhe0q" path="res://UI/RadialMenu/flash.gdshader" id="1_rlxdb"]
+
+[resource]
+shader = ExtResource("1_rlxdb")
+shader_parameter/flash_percent = 0.5000000237500001
+shader_parameter/flash_colour = Color(1, 0, 0, 1)
+shader_parameter/flash_duration = 0.5

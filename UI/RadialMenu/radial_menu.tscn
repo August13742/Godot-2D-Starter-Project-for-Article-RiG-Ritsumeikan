@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cklcdmigupnhy"]
+
+[ext_resource type="Script" uid="uid://b7f2yc2deg0ax" path="res://UI/RadialMenu/radial_menu.gd" id="1_0yw03"]
+[ext_resource type="Material" uid="uid://bm2i2t7f3kg1n" path="res://UI/RadialMenu/flash.tres" id="2_7cslw"]
+[ext_resource type="Texture2D" uid="uid://d0cwqfvkbllm7" path="res://Assets/ProjectileAssets/bubble.png" id="3_o8t65"]
+
+[node name="RadialMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0yw03")
+outer_fill_colour = Color(0.23573188, 0.23573191, 0.23573188, 1)
+inner_fill_colour = Color(0.72156864, 0.72156864, 0.72156864, 1)
+line_colour = Color(0.72255445, 0.7225545, 0.7225545, 1)
+num_slices = 8
+
+[node name="Bubble" type="Sprite2D" parent="."]
+material = ExtResource("2_7cslw")
+position = Vector2(52.999977, -188.00002)
+scale = Vector2(0.21728523, 0.21728523)
+texture = ExtResource("3_o8t65")
